@@ -12,11 +12,30 @@ var fileUpload = require('express-fileupload');
 const { Pool, client } = require('pg')
 
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'PMS',
-  password: '1234',
+
+  user: 'vbztcgctcznpgl',
+  host: 'ec2-54-235-92-244.compute-1.amazonaws.com',
+  database: 'd6n2rc7g8va9cu',
+  password: '938489f15ca803d3137bb22717daa986e86adf25a88d97f4061e74ab6d541f70',
   port: 5432
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // user: 'postgres',
+  // host: 'localhost',
+  // database: 'PMS',
+  // password: '1234',
+  // port: 5432
 });
 
 var signinRouter = require('./routes/signin')(pool);
